@@ -30,9 +30,7 @@ Jobhunt is a career portal web application for job seekers. This application con
 
 ## Features
 ### User
-- Login and Register
-- CRUD Jobs
-- CRUD Companies
+- Read jobs and companies
 
 ### Admin - Content Management Systems (CMS)
 - Login and Register
