@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "role": "admin",
+      "phoneNumber": "08123456789",
+      "Address": "Jl. Admin",
+      "createdAt": "2022-11-07 17:43:42.541 +0700",
+      "updatedAt": "2022-11-07 17:43:42.541 +0700"
+    },
+    {
+      "id": 2,
+      "username": "admin2",
+      "email": "admin2@admin2.com",
+      "password": "admin2",
+      "role": "admin",
+      "phoneNumber": "0812222223456",
+      "Address": "Jl. Admin No. 22",
+      "createdAt": "2022-11-07 17:43:42.541 +0700",
+      "updatedAt": "2022-11-07 17:43:42.541 +0700"
+    }
+  ],
+  "companies": [
+    {
+      "id": 2,
+      "name": "Code.id",
+      "companyLogo": "https://rec-data.kalibrr.com/www.kalibrr.com/logos/5K9WLSVWKXWTFBZVNYSFRWX69DYSXZLF3EUA9GHN-60c1fbc6.png",
+      "location": "Jakarta Timur",
+      "email": "codeid@codeid.com",
+      "description": "CODE.ID was previously a business unit of INTEGRASI, a system integrator that also provided software services established in 1999. In 2014, CODE.ID becomes an independently run company which currently has around 100 passionate developers with a myriad numbers of skill sets."
+    },
+    {
+      "name": "E&W Burger",
+      "companyLogo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ8AAAC6CAMAAACHgTh+AAABNVBMVEX////6wwD6wAD+773xkQD6vwD6xAD/+uj82HL6yhf+77v+9Nn//PP83Xz+66772WH+8c396qj82YP//PD83oj85If+9NTr1daMISaKHCH/+eL702DXk2f70Un6xx/2wHXwigD/8QD94pX/+rD/95T74r382mz97sL84aD84Hj701D0+vP7zz785pT7yzT+8MP70Dr83Xn71lH955370mr83Wv700LPfABRMQDligD0qVzU69Hg8dxiuVL/+ab/+8T824z979z7zyz60pz1tVDynQv1tVr62bH0pD5jOwCjYgDynCTCdQB0RgD3xIX98eSxawAtGwD75smHUgBAJwD616TD472OyoS84LWu2qeAxHVqvFyZz5FUtUJou1lJsTP/9FT/9XPz6Om9gIKrXGDjwrvPj3lxO/BKAAAR4ElEQVR4nO1dC3vbthWlIJF6US/T0VZ5Ujy3sRNZlmQrj2WJm1RJ+kjbpEvXpHHipuvW/v+fMIoERYK8BwRpwVZbnX37WrkACRxcXgD3XlwYTq2oEbWJIQC9rNa2jcywc9TxUIfN6Bk1k2mE2RfabFvgbSZrZu6Vcyt7HQ+9HdRnc2IUWUEnumJTZuhtbNjL2q02q+QTkKaFWjs39PLBWo7YFGcMyxYz9spusUEtDx29HTgoTc18WPEG2x1UlO07ZOsh2m6lRsY6Hg6geIxsvXywVjkxOFBArINs3Wq5DR+3s9PhVGCPF6Onkw8rqfDsPSisrUzaoO6N8uPsGqQNxWNY1ssH2yF0ZBtrkEwC0vLaPeimlxRh78MB8T5ujXwQ4rEQEFScnWToVo/X2c4qIF3Y3GldMx99cvAmUEBYQttgtHizrYzTtH0H9vemoZmPPbpJj1H5DALSGwR19rIJSBm2dtTWzMcQfNu1AaphKgvI8bJONYNQGaFcJeGLhz4+LCAehtFAVZQFJDJrM/gaCmXYWy4e+vjo11GjaniKUZwuGpE5s5plTYbFY9vQzEcDt+o2rLSv1Kt6P1KFbadXCNCDLx4Fk70uPmRLxyLUIGMoVFHsCUsqS52Pa7C5y9HTxUdF1q4hqmVJpGqJ2IbMVN729/A4LEdPEx8D6UDDXV1hpKBBOrEV91iVj2342vA71cRHiiKYonpWujao78QrddToqI/QWyOGAz18mCl6oAnfOkzVIElzTl9tTbaNd3JhIT183E1rWxXVtG6m1CTMOdZMhY5yQq6WiNiitPCRJh6GcQRfu5NSlzLn7KjwMYPiMY2U0sGHyjoTNq4gF5AyZe0bKGgQbCY0o0sDxId1ARQUVhESy7K0dpustJ+uQbB4VKPFAB/WsJEbxyorRhuuBQoyK7FDj/IgdQ0ityKn8pH+gouiA9u3L9my0uLhLv/SdjF4Vz0VyiE+FOf0/CjPUQMt7HqA1r7xBNbx3watyEwUxyvjQ2JZ3oGDXYdKIMVwiJ0MscXLlfFhdHO4HnpwNpS7HsrYihxTDFfHRx7Xgy0xYMg0CHYyTGMG2Kvjw2jDXQyesLF5vCrZCdrHquJxlXwYEgFBVRws+DOsQXrYRRln8Sr5wHYhE7oRJAICp+lUJ0O0TVfIh7EFBxtuCCWaEVqWbTi1jxJa+DL4sJ3ypNPpHDhOTKSLcIrBAlLE624oIDXEYZJC/XzY3e15wYvIMed7dZER7Hq4hR7Xg9t2doTqOODDTIqHfj7Ke1b4ClbdE6ZF7HoYQAHB4T1VOE3fpHtJbLR08xGfECxhnWBjG80xemJvH1UxYaPpsBNCPLTz0Yg/3xKe3MQmb7ieuKm2c4/CvkkVp4z5mvlICjcTHHc2dj1Aq0EdW3ZgqwUXFseY2jdq5iP8HsL3CLuTJuKj0IcaZA8KyBhqEGLtRy769PIR7tnmrTl/UyxEAbse4HqiB4WqAC3LybCTAWlW0MvHUj3s2bZ9zQ+DNcWtOTQcSlwP2HPQR1XshDNqSJbTy0eH8+EbzfdvLXCnKAp1Dsuygz1LsN2JtR9tlrwkPiRhTRIBgVMMnHILO3BXFxOQOV0K8TFzymqQ8hEMitWxveh7x+aILkKwbwoacbFnGg+kaEFlwGqN/A3MVAOc8j04wTRntfZc9dg+aQWIFILOS7YPxeoWFKrbcIqpRIsB8biwP0rORyikrh61jWZ4sCDaUCwg0PWALRrkqsJDVECQeOjmoxxOjQs+wpdF+ZBYluHniA2HDahBIpuDKSqjmQ+jlc6H0cOuBygg2C40htbo0P6Ej9to5qMTyijmw8bOy/iBkRBYQLZgneU0PYVyp5eP6HYN82F08SIVTrl12KQBdD0E75ecxtLKRz3UHr4+BXzIXA/o2ZLAfByzzDX3Xbwc0srHcuPFqq39VshHtRqrdgDXEwwu2rGAzGGdpukVkDindfIRRnpxFzXnIxmXbT+Ggw13JOWTvAIyl7hqdPKxtAbe5gRAPiSnHnCsEfL1u42C38MiqoDJIm508hEYg5Y7d8wHjoXEGkTieoCW5YWAUGbCq+GDx3xQB10kQe15XA9wynWbID0BcCl8BKY/vmawCD4cvGWFsaxYQLDh0JlLxUMvH8HGhFt2gugNcvSwZRkfksvhejA6WzI6tPIxCdaD1v6BbdhFbgdmQ4qPPK4HiWUZGg4deUS4Tj6ccIc92npcGdMG1ABYQEZQgygGDWaA1vVYZPfibvGDf7XAB0y4BHgF6HqQRA3mNPBp5cOhvgF4Mn0GX0Kf1FwAux5Ga8iHUSdm0Srcj2O7EHY9YKHKJyCa9/u9QcJfiTcPMCRVYlk+zu56uEo+DPtELD+SRR/DvuHBxgkSBkqnHi6bD3fUW+OBVWDu/6xBf1tqj8cxy9hhcQyqKJ56iAPyoZgRR2Ve682uVW7fvn3caKZFVa/U9TDOky4F8THcUkOG054KkFiWoYDARXshTz6dK4vnJyEJaoeDje1CeQREn7+y3GkidOCWCgQ2SU89SFwP2fPp6OPjQHJiCEfLYcsy5FBiWc6Yg8fQyocJ28nuoEoSyzJOuIQ1SPZ8Ohr5wDM5w8dz2/jcFFyT5T31QGHd+JAIyBB6qvNYlgHWjQ/jAE4xOF2KxLKslCAhgrXjI9epBxiwnznh0vrxgYPaGVyT4fM+82z5dNZtfjEEq1q8Wg7XA7Ys09DHR3e4A4H9I4bU9YAdkTlcDyT08WH3MKRttHO4HiSn0bNt+6/0PBAAFpDxKk89kFhHPnBQO87SJBGQTF1ZRz6MGXY9QA2CTz2gUEISa8mHgY8qQ3tLFwpVJtfDevKBEy5h1wMOaldOuGSsKx/YcIgbRh1x4XUy7OrWlA8YsyzJw30NCUgWz8Oa8oFcD9gzJXE9pOTCEID4OOrV8+PCbMCES33ZdgQs9FcxvxSs6gWQObd8EiCoXbrQ75JClS31v478Uqa01YogfVMD+W6V3NVlEg89+ceyLZFpkK6HlHSPVD7PjDdDaOFDEt+nDMpwaKXtVQnXwzTb2OjJ12etQEDqCQ3CUrOBJvMBmxnvhdDDB7uWl4UQhICks5ywLK/IPnZRZFkiI8RdD1KrGkc31h31ZLEcmvhQSzmZgrjzUmGo4wmXpiuyr18YoxVoENH1gFOCRCGuQbJfO6SLj3zROSKcregT1a4mEPNrqKQfFqEt3zgZdJu1cZEdCcPnBMU60UaszH97caxiR+hE8ungk2MioglS5aHqJPTd35CaclIBoWWZKT+uFmqQzLeh6OQj321XIsKgdhy1Gkfomxpl2ehzaLzvpJJxKUQhiPhmDfWHLfOzqyS3j0MjH3TCkWwIXA/VDMLWHfp9Wml84QrAcl2HFoMvICyTrPGg9tXGn64A1RzXoSXgadRswej+sd98IZJa75/Lod8TWJx6kESfkvBcD3Q+nDRovZ9QlpNUGdXsuyHv1EM+7aX3/sqVCAgr4LQXAJUrO/8iR9br0EhU5VZkCt1BjgtkPWi+/zbTbVcAMxzlALGfzYocortf0YlrK/hg7Bw7oW7uxbFiGqmcWMEKZIMNNthggw022GCDDTbYYIMNNthggw022GCDDTbYYIMNNvijwqlFUJQ6jv0yk8AFWfd/01VqAopp8Qp2mxdMDzf/7MaNG5JSXfHNac8LXrzsleDfN83CvANdruaiqBnkvXK2/Dsp6SA+MWrANK07uGXlo6oZlDfZfIbIs+0nT5/t+ig9ffKScpXbJ7E3F+4eQJd6b7vKzLCFXvBOIv7DhDHffskgKMzZ9n6Dky6JXCgMZiBsV8XC5pQMNbVfXS/tlkLslj6/kexp8kJpBk8RtatCWWYtki8l42EYykF0IT4KBYuOjrWriR5Q9wl85rJxvxTF/QUj6Xy4BNNBKL3ki2tkfBBKS3NBPsAdv4kLLqnQffuLL3dL9766F6Hj+XNXRr5+EitJXjg+IFXAtWTJqh3wMej3+9PgYlYqf34uPqyR8FiyWcEhKGvcHwUl4+cz7Sdfuwzc+8c3ET6+/db7xwuxaMDH2H3xaHkAjwzH41HMzJr2g4Bms835YI1Jt9su8vMmIPYqOx/VZtd9bI2fmzapD4Zf1cuGzbZbkoeexxNJffHM63tUPEr3+dfzhOKDbS9eXGzwjlIJ3B0uwpViu1vkEbzsKODDz+PGL4YEfczBh6+J+C2WJB/8Hiiubbv+kMZu/3r5ZQng/vN7pVcUH/7jyhW/zVTaoYnfRD/5Pz9FxI5FPmzeR/pkVm4+HF9HkHzw1HJ8UuOZ92IC+iKcV+5/9V2Uj2/+9V3pS8xHcAKP4oPfqT30dAM/y+lORSIfe1r44DTL+OBpTmLd4fC+luceEff/EfKx+GDu3S/tRrWdOh+8463fHx+vdj0ivhWn29L3//bV6+6Li/Dxu5AP8dTsi90ShXvf83+JfjB/ND6OxyMX4smV6zQfSzy9OB9G+8jDZM34IPHqny6uY/ywAj7if15nPrIgpz5N/PnPykfhrowP5/jPwwdff1ixzXTAh/eDX9ED0plcIR+Hrx8c8n96vx++fuj9fPD6UCyozkfbbyLbmQnbKi42w21Xu1b46d+V7efU16dSPg5/fHN6+ubHw8O3Z+fv3r8+fPD+3fm7tw8OX7/56fTsrcCIOh92sMu0bs8i2yXOh5clnm+mGDidlZuPsn+vVl4+Hp6dn79/e3p+dvbh9O2bD6dnP304e/3uwzv3z2/en56/ewD5sLcwH8Y02O8za7i9fH3C/mGdIANbDj484h1+JQmZukaBjwfnbx8uhOT0p9eHh4cP35+fuR/P4YMz98/u7x/P3xN8eAsYe5sbE8gLyqL2IGu836b5GDSgTTk7H4WBh2AcqIJ69Kn4YmCq7E6jViur5QlzQj6YiW6HzcGH8OATqmCEj/KtAHdys0Pbx1Dp4jSSPYWx49B+Olisksd8egGnAC/IB/3UCB/t0Cqe+7YVkg/JadVJK3qD8/Fyvl1UsdszP2UmuPTnQnxYY/oUXJSPcKhEPuwYYn9P4WMgz3U1qYRJV1wNJ6zHgrzudOL37HxYYxf+q4bg7LoCH86nn4h45DWv/Ij/jH5cS/3hvtjvS3pelnYjuFfS7YzIB8+pykjXQI75ZVYs+peywpPJAh/BHYYiH72/x/Hzx93eo/8Evz5J8sEaxWLTN35O0+gwFjLC5aAR54MbUMnBzLn+uOt3GCjpCB+9RoXLbux7+VjEpy4TPy/+/6n/G9nH+C32Kme7y8PL48PPZGoBJ1d0vi2Xe6S9MA5PNlwZIf5TlA//41c6qB0Yji+Dj54pa5aK/TSJ8uQRLW/RB/h3L+FLH6LVaPuYFj78zK7ouqN8fOCORR7g+N4GS6XaZfLh+xCq9HeswMcvf5HjF8AH39KbCou7y+SD58oG98Yr8PHfj/4qw0f/Q3xwBaKQHeJS+SgXJM1S4kMOyAdfPdCpHibVuYvqvsy+rokP/065PrkCUeDj19/+JsNvvyI+giaSLaz5al7qb9DDh81DGmR8jCR8fJ7ib8D+Fz+XIX1/Q4q/0i/UHUn44OEDvK2B75v+DAR7UBGbxwJ/drWJ+cjvf+EJQ8k8sl2/iX7sDbfghf7sSvFgAX4nBL1ev+szOu5Ei5r0vkTgo85nXKogj3co9JuLh9b4fkHg4wc5H7ufQz7qfro/Olkv3xs0Fj2fVYPBDeyFXh75ZVyIPKAmWpT+OGP2Ql+U6F3z0mgTaYHIx8tncj6iAQ8xe+Fj73EDcmrj4s6ssDfLeJgYaI3cI9Lfo9WfaF/nXye5AiHipeLrsR+kdFyPFo19cPwWJfKbniVtNGG8lNgckHwnmfCaoasJBD4CvUbaZRziYoK4/eOF7Gt5KeFj4u8P6S91lDANkvF00L7ujnNBLM1gRj6RDz9TNm0wjIc9EnwY9pNntA7ZLb14KZYU+ej5CqRPfv/dkSAhzDqyk/m2TKuFsw7aByeFZXmTVbeh7dmP1Q1y2pZ3vFBeoGvKR8uw2ODRiRlyEXyaROlpPASVx+MuH7DlxxDTAl/uzBPxuE6tGMUk1VrQm/gla21ZKi3vqbVJUKTr/4Y17K7QjBrZipc3RLyiCvE3BQ/opfWKlw86839l4sWKs2AXhwAAAABJRU5ErkJggg==",
+      "location": "Surabaya",
+      "email": "edanwBurger@ewburger.com",
+      "description": "Ini perusahan EdanW Burger",
+      "id": 7
+    },
+    {
+      "name": "sfdafdfs",
+      "companyLogo": "asadfffds",
+      "location": "sdfadfasdfs",
+      "email": "afsdfsasdf@dsffsd.co",
+      "description": "dfsfsdasadf",
+      "id": 8
+    }
+  ],
+  "jobs": [
+    {
+      "id": 2,
+      "title": ".Net Developer",
+      "description": "Producing code using .NET languages (C#, VB .NET Upgrading, configuring and debugging existing systems Providing technical support for web, desktop or mobile applications",
+      "companyId": 2,
+      "userId": 1,
+      "jobType": "Part Time",
+      "createdAt": "2022-11-07 17:43:42.541 +0700",
+      "updatedAt": "2022-11-07 17:43:42.541 +0700"
+    },
+    {
+      "id": 4,
+      "title": "JAVA Developer",
+      "description": "Producing code using .NET languages (C#, VB .NET Upgrading, configuring and debugging existing systems Providing technical support for web, desktop or mobile applications",
+      "companyId": 2,
+      "userId": 1,
+      "jobType": "Part Time",
+      "createdAt": "2022-11-07 17:43:42.541 +0700",
+      "updatedAt": "2022-11-07 17:43:42.541 +0700"
+    }
+  ],
+  "skills": [
+    {
+      "id": 2,
+      "jobId": 2,
+      "name": "ASP.NET",
+      "level": "Intermediate"
+    }
+  ]
+}

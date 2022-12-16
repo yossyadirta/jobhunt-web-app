@@ -1,0 +1,26 @@
+[
+  {
+    "JobId": 1,
+    "SkillId": 1
+  },
+  {
+    "JobId": 1,
+    "SkillId": 3
+  },
+  {
+    "JobId": 1,
+    "SkillId": 4
+  },
+  {
+    "JobId": 2,
+    "SkillId": 2
+  },
+  {
+    "JobId": 3,
+    "SkillId": 5
+  },
+  {
+    "JobId": 4,
+    "SkillId": 6
+  }
+]

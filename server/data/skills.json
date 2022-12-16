@@ -1,0 +1,26 @@
+[
+  {
+    "name": "React",
+    "level": "Beginner"
+  },
+  {
+    "name": "ASP.NET",
+    "level": "Intermediate"
+  },
+  {
+    "name": "ASP.NET",
+    "level": "Advanced"
+  },
+  {
+    "name": "PHP",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Statistics",
+    "level": "Beginner"
+  },
+  {
+    "name": "JAVA",
+    "level": "Advanced"
+  }
+]

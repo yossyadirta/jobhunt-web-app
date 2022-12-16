@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Frontend Engineer",
+    "description": "One of the impressive programs of DOKU. During the DOKU Academy, employees have to challenge themselves to take on various tasks to be able to leverage their skills related to Front End (FE) Engineering",
+    "companyId": 1,
+    "authorId": 1,
+    "jobType": "Full Time",
+    "createdAt": "2022-11-07 17:43:42.541 +0700",
+    "updatedAt": "2022-11-07 17:43:42.541 +0700"
+  },
+  {
+    "title": ".Net Developer",
+    "description": "Producing code using .NET languages (C#, VB .NET Upgrading, configuring and debugging existing systems Providing technical support for web, desktop or mobile applications",
+    "companyId": 2,
+    "authorId": 1,
+    "jobType": "Part Time",
+    "createdAt": "2022-11-07 17:43:42.541 +0700",
+    "updatedAt": "2022-11-07 17:43:42.541 +0700"
+  },
+  {
+    "title": "Officer Development Program Wholesale Banking 2022",
+    "description": "To support our aspirations, our various business segments, and our strong performance-driven culture across the organization, Bank Mandiri is committed to attracting and retaining high quality talents across the country to assure our further accomplishments. You will be immersed in an exceptional and challenging work environment and surrounded by colleagues and leaders who are passionate to helping you grow. \nThe ODP Wholesale Banking program prepares you for leadership roles across many functions and levels in Bank Mandiri, designed to develop leaders and professional Wholesale Bankers, equipped with the skills and knowledge in Wholesale funding, lending, and solutions. You will be trained by highly experienced bankers and leaders in various aspects of Wholesale Banking and leadership throughout your development journey. Starting off with an intensive in-class education followed by on-the-job training and rotation across different parts of the Bank. You will get the opportunity for exciting yet challenging exposure in Treasury, International Banking, Trade Finance, and/ or Wholesale Transactions, serving middle-market businesses (Commercial Banking), large corporations (Corporate Banking), and also Government Institutions.",
+    "companyId": 4,
+    "authorId": 1,
+    "jobType": "Full Time",
+    "createdAt": "2022-11-07 17:43:42.541 +0700",
+    "updatedAt": "2022-11-07 17:43:42.541 +0700"
+  },
+  {
+    "title": "JAVA Developer",
+    "description": "Producing code using .NET languages (C#, VB .NET Upgrading, configuring and debugging existing systems Providing technical support for web, desktop or mobile applications",
+    "companyId": 3,
+    "authorId": 2,
+    "jobType": "Part Time",
+    "createdAt": "2022-11-07 17:43:42.541 +0700",
+    "updatedAt": "2022-11-07 17:43:42.541 +0700"
+  }
+]

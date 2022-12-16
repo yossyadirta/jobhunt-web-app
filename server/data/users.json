@@ -1,0 +1,34 @@
+[
+  {
+    "username": "admin",
+    "email": "admin@admin.com",
+    "password": "admin",
+    "role": "admin",
+    "phoneNumber": "(298) 1256296",
+    "address": "22 Shopko Circle"
+  },
+  {
+    "username": "admin2",
+    "email": "admin2@admin2.com",
+    "password": "admin2",
+    "role": "admin",
+    "phoneNumber": "(298) 1256296",
+    "address": "Admin 2 Circle"
+  },
+  {
+    "username": "user",
+    "email": "user@user.com",
+    "password": "user",
+    "role": "staff",
+    "phoneNumber": "(242) 6558516",
+    "address": "0888 Kedzie Alley"
+  },
+  {
+    "username": "user2",
+    "email": "user2@user2.com",
+    "password": "user",
+    "role": "staff",
+    "phoneNumber": "(242) 6558516",
+    "address": "0888 Kedzie Alley"
+  }
+]
