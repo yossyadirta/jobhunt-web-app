@@ -1,94 +1,73 @@
-# P3-Challenge-1
+# Jobhunt Web App
 
-- Tema Aplikasi: Career Portal
-- CSS Framework: Tailwindcss
+## Preview
+### Client User
+<div align="center">
+ <a href="https://jobhunt-indonesia.web.app/">
+    <img src="https://cdn.discordapp.com/attachments/1051562263183634462/1053394840521539584/screencapture-jobhunt-indonesia-web-app-2022-12-17-02_33_04.png" alt="Logo" width="600" height="1000">
+  </a>
+  </div>
+  
+### Client Admin (CMS)
+<div align="center">
+  <a href="https://jobhunt-indonesia.web.app/">
+    <img src="https://cdn.discordapp.com/attachments/1051562263183634462/1053394840135680061/screencapture-jobhunt-indonesia-admin-web-app-2022-12-17-02_31_49.png" alt="Logo" width="800" height="700">
+  </a> 
+</div>
 
-Struktur Folder:
+## Live Demo
+* Client User: [https://jobhunt-indonesia.web.app/](https://jobhunt-indonesia.web.app/)
+* Client Admin: [https://jobhunt-indonesia-admin.web.app/](https://jobhunt-indonesia-admin.web.app/jobs)
+```txt 
+Admin account for testing:
+email: admin@admin.com
+password: admin
+```
+ 
 
-- server (PORT: 3000)
-- client-user
-- client-admin
+## About Jobhunt
+Jobhunt is a career portal web application for job seekers. This application consists of a client for job seekers and a client for the content management system.
 
-## W1D1
+## Features
+### User
+- Read jobs and companies
 
-Target:
+### Admin - Content Management Systems (CMS)
+- Login and Register
+- CRUD Jobs
+- CRUD Companies
 
-- [x] Lecture - React Intro
-- [x] React: Class Component vs Function Component
-- [x] Mempelajari State menggunakan useState
-- [x] Mengirim Props baik berupa sebuah state atau function
-- [x] Event Handling (onClick, onChange, onSubmit)
-- [x] Conditional Rendering di dalam React
-- [x] Looping List of Data di dalam React
-- [x] Lifecycle component menggunakan useEffect
-- [x] Membuat server (json-server)
-- [x] Membuat react app untuk client-user (Styling)
-- [x] Membuat react app untuk client-admin (CRUD)
-- [x] Menentukan Thema Aplikasi
-- [x] Menentukan Design dan pemilihan CSS Framework
 
-**Report:**
+## Built With
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+[![TailwindCSS][tailwindcss]][tailwindcss-url]
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
 
-Hari ini saya belajar React Component. Saya mulai memahami bagaimana cara React bekerja. Lifecycle yang sudah saya coba hari ini adalah useEffect yang digunakan untuk fetch data job dan companies. Saya juga telah mencoba menggunakan handling onChange dan onSubmit. Lalu untuk react app untuk client-admin saya baru menyelesaikan di hari kedua.
-Pada tugas ini, saya memilih Tema Career Portal dengan mengambil referensi dari Kalibrr. Saya juga menggunakan CSS Framework yaitu Tailwind CSS
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-> contoh: Hari ini saya belajar React Component. Saya memahami bagaimana cara React bekerja. Lifecycle yang sudah saya coba adalah componentDidMount yang digunakan untuk fetch data dst. Namun saya belum mencoba menggunakan onSubmit dikarenakan data yang didapat belum sesuai.
-> Pada tugas ini, saya memilih Tema A dengan mengambil referensi dari B. Saya juga akan menggunakan CSS Framework yaitu Tailwind CSS
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-## W1D2
-
-Target:
-
-- [x] Lecture - Custom Hooks
-- [x] Rules of Hooks
-- [x] Lecture - React-Router
-- [x] Membuat router user-side (min: home, detail)
-- [x] Membuat router admin-side (min: login, add admin, CRUD main entitas, CRUD another entitas)
-- [x] Membuat privateRoute untuk admin
-
-**Report:**
-
-Pada hari ini saya belajar custom Hooks dan router. Di hari ini saya menyelesaikan template client-user dan client-admin. Saya juga telah mencoba membuat router. Setelah saya menyelesaikan routing untuk user dan admin hari ini, saya akan mencoba custom Hooks.
-
-## W1D3
-
-Target:
-
-- [x] Lecture - Redux
-- [x] State vs Global State
-- [x] Bagaimana cara membuat Store
-- [x] Bagaimana cara membuat Reducer
-- [x] Bagaimana cara membuat Action
-- [x] Membuat Action Creators
-- [x] Membuat Action Types
-- [x] Lecture - Redux-thunk (handle async)
-- [x] Cara menggunakan combineReducers
-
-**Report:**
-
-DI hari ketiga saya belajar Redux untuk membuat global state. Saya mempelajari bagaimana cara membuat store, reducer, dan action. Saya telah membuat Action Creators dan action types. Pada awalnya saya bingung untuk menggunakan combineReducers, tetapi setelah berhasil menggunakannya saya sudah mulai mengerti bagaimana alurnya.
-
-## W1D4
-
-Target:
-
-- [x] Lecture - SQL Advance DQL
-- [x] Membuat server mengguanakan express.js, postgreSQL dan Sequelize
-- [x] Menentukan associations antar tables
-- [x] Lecture - SQL Transaction
-- [x] Membuat transaction saat membuat entitas baru pada main table. Pastikan ada assosiasi di dalamnya
-
-**Report:**
-
-Pada hari ini saya mengikuti lecture SQL Advance DQL untuk mereview kembali materi SQL dan menambah pengetahuan baru tentang raw query di sequelize. Saya telah membuat server dan menentukan asosiasi antar table. Pada hari ini saya juga belajar tentang SQL transaction, walaupun SQL Transaction belum saya terapkan di server, tetapi setelah mengikuti lecture, saya mulai memahami bagaimana alurnya dan cara pengerjaannya.
-
-## W1D5
-
-Target:
-
-- [x] LC Simulation
-- [x] Practice, Practice, Practice
-
-**Report:**
-
-Pada D5 ini saya telah menyelesaikan server untuk SQL Transaction. Saya juga telah mengikuti LC Simulation dimana menurut saya, saya sudah cukup bisa mengerjakan dari mulai slicing template, create, fetch data, dan delete.
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
+[firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white
+[firebase-url]: https://firebase.google.com/
+[tailwindcss]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[tailwindcss-url]: https://tailwindcss.com/
