@@ -10,11 +10,12 @@ export default function ListJob() {
   const dispatch = useDispatch();
 
   const [page, setPage] = useState(1);
-
+  const [loadingInfiniteScroll, setLoadingInfiniteScroll] = useState(true);
+  // console.log(page);
   const [searchParams, setSearchParams] = useSearchParams({
     search: "",
   });
-
+  // console.log(jobs, "<< jobs");
   const handleChange = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -30,19 +31,52 @@ export default function ListJob() {
     dispatch(fetchJobs(searchParams, page));
   };
 
-  function handleChangePage(index) {
-    if (index > jobs.totalPage) {
-      index = jobs.currentPage;
-    }
-    setPage(index);
-  }
+  // function handleChangePage(index) {
+  //   if (index > jobs.totalPage) {
+  //     index = jobs.currentPage;
+  //   }
+  //   setPage(index);
+  // }
 
   useEffect(() => {
     dispatch(fetchJobs(searchParams, page));
+    setLoadingInfiniteScroll(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
+  const handleScroll = () => {
+    let height = document.documentElement.scrollHeight;
+    let top = document.documentElement.scrollTop;
+    let windowHeight = window.innerHeight;
+    console.log(windowHeight + top + 1, height);
+    console.log(page, jobs.totalPage);
+
+    if (page <= jobs.totalPage) {
+      console.log(windowHeight + top + 1, height);
+      if (windowHeight + top + 1 >= height) {
+        console.log("masuk ke if kedua");
+        setLoadingInfiniteScroll(true);
+        setPage((prevPage) => {
+          if (page === jobs.totalPage) {
+            return (prevPage = jobs.totalPage);
+          }
+          return prevPage + 1;
+        });
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   if (loading) {
+    return <Loading />;
+  }
+
+  if (loadingInfiniteScroll) {
     return <Loading />;
   }
 
@@ -69,13 +103,13 @@ export default function ListJob() {
           </form>
         </div>
         <div>
-          {jobs?.rows?.map((job) => {
-            return <JobListRow key={job.id} job={job} />;
+          {jobs?.map((job, index) => {
+            return <JobListRow key={index} job={job} />;
           })}
         </div>
       </div>
       {/* Pagination */}
-      <div className="justify-center flex-1 px-4 py-6 pb-24">
+      {/* <div className="justify-center flex-1 px-4 py-6 pb-24">
         <div className="flex justify-center">
           <ul className="flex items-center justify-center space-x-1">
             <li>
@@ -105,7 +139,7 @@ export default function ListJob() {
               )}
             </li>
 
-            {Array.apply(null, { length: jobs.totalPage }).map((e, i) =>
+             {Array.apply(null, { length: jobs.totalPage }).map((e, i) =>
               jobs.currentPage === i + 1 ? (
                 <li key={i}>
                   <button
@@ -158,7 +192,7 @@ export default function ListJob() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

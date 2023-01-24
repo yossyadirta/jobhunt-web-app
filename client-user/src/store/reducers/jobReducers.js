@@ -9,9 +9,12 @@ const initialState = {
 export default function jobReducers(state = initialState, action) {
   switch (action.type) {
     case FETCH_JOBS:
+      const newJobsList = action.payload.rows;
+      // console.log(newJobsList, "<<< payload dari reducer");
+      const { jobs } = state;
       return {
         ...state,
-        jobs: action.payload,
+        jobs: [...jobs, ...newJobsList],
       };
     case FETCH_DETAIL_JOB:
       return {

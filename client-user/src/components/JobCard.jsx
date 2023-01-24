@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 export default function JobCard({ job }) {
+  console.log(job, "dari components");
   const navigate = useNavigate();
   return (
     <div className="w-full h-full">
