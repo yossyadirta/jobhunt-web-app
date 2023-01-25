@@ -11,13 +11,14 @@ export function setLoading(payload) {
 
 export function fetchJobs(searchParams) {
   let currentSearch = "";
+
   if (searchParams) {
     currentSearch = `${searchParams}`;
   } else {
     currentSearch = "";
   }
-  let find = currentSearch;
 
+  let find = currentSearch;
   return (dispatch) => {
     fetch(`${BASE_URL}/jobs?page[number]=1&${find}`)
       .then((res) => {
@@ -52,13 +53,20 @@ export function fetchJobs(searchParams) {
       });
   };
 }
-export function fetchMoreJobs(page) {
+export function fetchMoreJobs(searchParams, page) {
   if (!page) {
     page = 1;
   }
+  let currentSearch = "";
+  if (searchParams) {
+    currentSearch = `${searchParams}`;
+  } else {
+    currentSearch = "";
+  }
+  let find = currentSearch;
 
   return (dispatch) => {
-    fetch(`${BASE_URL}/jobs?page[number]=${page}`)
+    fetch(`${BASE_URL}/jobs?page[number]=${page}&${find}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Error Fetch");

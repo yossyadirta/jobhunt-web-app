@@ -11,9 +11,11 @@ export default function ListJob() {
 
   const [page, setPage] = useState(1);
   const [loadingInfiniteScroll, setLoadingInfiniteScroll] = useState(true);
+  // console.log(jobs, "< ini job dari component");
   const [searchParams, setSearchParams] = useSearchParams({
     search: "",
   });
+  // console.log(jobs, "<< jobs");
   const handleChange = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -35,12 +37,11 @@ export default function ListJob() {
   //   }
   //   setPage(index);
   // }
-
   useEffect(() => {
-    if (jobs.currentPage !== 1) {
+    if (page === 1) {
       dispatch(fetchJobs(searchParams));
     } else {
-      dispatch(fetchMoreJobs(page));
+      dispatch(fetchMoreJobs("", page));
     }
     setLoadingInfiniteScroll(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
