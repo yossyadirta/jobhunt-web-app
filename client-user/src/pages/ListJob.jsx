@@ -1,7 +1,7 @@
 import JobListRow from "../components/JobListRow";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchJobs } from "../store/actions/jobsAction.js";
+import { fetchJobs, fetchMoreJobs } from "../store/actions/jobsAction.js";
 import { useSearchParams } from "react-router-dom";
 import Loading from "../components/Loading.jsx";
 
@@ -9,9 +9,11 @@ export default function ListJob() {
   const { jobs, loading } = useSelector((state) => state.jobs);
   const dispatch = useDispatch();
 
+  console.log(jobs, "<< dari component");
+
   const [page, setPage] = useState(1);
   const [loadingInfiniteScroll, setLoadingInfiniteScroll] = useState(true);
-  // console.log(page);
+  // console.log(jobs, "< ini job dari component");
   const [searchParams, setSearchParams] = useSearchParams({
     search: "",
   });
@@ -28,7 +30,7 @@ export default function ListJob() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(fetchJobs(searchParams, page));
+    dispatch(fetchJobs(searchParams));
   };
 
   // function handleChangePage(index) {
@@ -37,9 +39,12 @@ export default function ListJob() {
   //   }
   //   setPage(index);
   // }
-
   useEffect(() => {
-    dispatch(fetchJobs(searchParams, page));
+    if (jobs.currentPage !== 1) {
+      dispatch(fetchJobs(searchParams));
+    } else {
+      dispatch(fetchMoreJobs(page));
+    }
     setLoadingInfiniteScroll(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
@@ -48,28 +53,26 @@ export default function ListJob() {
     let height = document.documentElement.scrollHeight;
     let top = document.documentElement.scrollTop;
     let windowHeight = window.innerHeight;
-    console.log(windowHeight + top + 1, height);
-    console.log(page, jobs.totalPage);
 
-    if (page <= jobs.totalPage) {
-      console.log(windowHeight + top + 1, height);
+    if (page !== jobs.totalPage) {
       if (windowHeight + top + 1 >= height) {
-        console.log("masuk ke if kedua");
         setLoadingInfiniteScroll(true);
         setPage((prevPage) => {
           if (page === jobs.totalPage) {
-            return (prevPage = jobs.totalPage);
+            return jobs.totalPage;
           }
           return prevPage + 1;
         });
       }
+    } else {
+      return;
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
-    // return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   });
 
   if (loading) {
@@ -81,7 +84,7 @@ export default function ListJob() {
   }
 
   return (
-    <section className="bg-[#f7faff] ">
+    <section className="bg-[#f7faff]">
       <div className="flex-cols py-4 pt-8 pr-60 pl-64 text-left">
         <div className="py-12 pt-24">
           <form onSubmit={handleSubmit} className="flex flex-row">
@@ -103,7 +106,7 @@ export default function ListJob() {
           </form>
         </div>
         <div>
-          {jobs?.map((job, index) => {
+          {jobs?.rows?.map((job, index) => {
             return <JobListRow key={index} job={job} />;
           })}
         </div>
