@@ -9,15 +9,11 @@ export default function ListJob() {
   const { jobs, loading } = useSelector((state) => state.jobs);
   const dispatch = useDispatch();
 
-  console.log(jobs, "<< dari component");
-
   const [page, setPage] = useState(1);
   const [loadingInfiniteScroll, setLoadingInfiniteScroll] = useState(true);
-  // console.log(jobs, "< ini job dari component");
   const [searchParams, setSearchParams] = useSearchParams({
     search: "",
   });
-  // console.log(jobs, "<< jobs");
   const handleChange = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -39,6 +35,7 @@ export default function ListJob() {
   //   }
   //   setPage(index);
   // }
+
   useEffect(() => {
     if (jobs.currentPage !== 1) {
       dispatch(fetchJobs(searchParams));
