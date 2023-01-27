@@ -6,6 +6,7 @@ import { fetchJobs } from "../store/actions/jobsAction.js";
 import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import { fetchCompanies } from "../store/actions/companiesAction.js";
 import Loading from "../components/Loading.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function Home() {
   const { jobs, loading } = useSelector((state) => state.jobs);
@@ -176,6 +177,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
