@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchJobs, fetchMoreJobs } from "../store/actions/jobsAction.js";
 import { useSearchParams } from "react-router-dom";
 import Loading from "../components/Loading.jsx";
+import SkeletonJobList from "../components/skeletons/SkeletonJobList";
 
 export default function ListJob() {
   const { jobs, loading } = useSelector((state) => state.jobs);
@@ -73,9 +74,9 @@ export default function ListJob() {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   if (loadingInfiniteScroll) {
     return <Loading />;
@@ -104,9 +105,17 @@ export default function ListJob() {
           </form>
         </div>
         <div>
-          {jobs?.rows?.map((job, index) => {
-            return <JobListRow key={index} job={job} />;
-          })}
+          {loading ? (
+            Array.from({ length: 10 }).map((_, index) => (
+              <SkeletonJobList key={index} />
+            ))
+          ) : (
+            <>
+              {jobs?.rows?.map((job, index) => {
+                return <JobListRow key={index} job={job} loading={loading} />;
+              })}
+            </>
+          )}
         </div>
       </div>
       {/* Pagination */}
